@@ -1,4 +1,4 @@
-# Starting point
+# lunatic-ublue
 
 [![build-ublue](https://github.com/alxhr0/lunatic-ublue/actions/workflows/build.yml/badge.svg)](https://github.com/alxhr0/lunatic-ublue/actions/workflows/build.yml)
 
