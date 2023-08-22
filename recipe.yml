@@ -41,8 +41,6 @@ rpm:
   # which greatly simplifies future maintenance of your custom recipe.
   repos:
   # Example (which also demonstrates version number expansion):
-  - 
-
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
   # performed via rpm-ostree during the image build, and will be pre-installed
