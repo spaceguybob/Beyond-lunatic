@@ -1,5 +1,7 @@
 # Info
-This is image is only for my usage, it's not meant for other hardware, other than mine. Please don't fork the repo, as it's not the correct way of doing a custom image, to make one follow https://universal-blue.org/tinker/make-your-own/
+~~This is image is only for my usage, it's not meant for other hardware, other than mine. Please don't fork the repo, as it's not the correct way of doing a custom image, to make one follow https://universal-blue.org/tinker/make-your-own/~~
+
+- basically fuck you alx
 
 ## Installation
 
