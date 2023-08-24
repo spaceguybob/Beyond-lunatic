@@ -40,6 +40,7 @@ rpm:
   # so that your repos automatically use your image's actual Fedora version,
   # which greatly simplifies future maintenance of your custom recipe.
   repos:
+  - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
   # Example (which also demonstrates version number expansion):
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
@@ -50,7 +51,7 @@ rpm:
     - python3-pip
     - libadwaita
     - qemu
-    - VirtualBox
+    - vivaldi-stable
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
@@ -80,5 +81,17 @@ firstboot:
     - org.inkscape.Inkscape
     - net.lutris.Lutris
     - io.github.shiftey.Desktop
-    
+    - com.discordapp.Discord
+    - com.obsproject.Studio
+    - md.obsidian.Obsidian
+    - net.davidotek.pupgui
+    - org.mozilla.Thunderbird
+    - com.spotify.Client
+    - org.libreoffice.LibreOffice
+    - org.onlyoffice.desktopeditors
+    - org.audacityteam.Audacity
+    - org.kde.kdenlive
+    - org.telegram.desktop
+    - org.kde.neochat
+    - org.prismlauncher.PrismLauncher
 
