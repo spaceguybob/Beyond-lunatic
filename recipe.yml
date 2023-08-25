@@ -20,8 +20,8 @@ rpm:
     - libadwaita
     - qemu
     - VirtualBox
-    - brave-browser
     - brave-keyring
+    - brave-browser
   remove:
     - firefox
     - firefox-langpacks
