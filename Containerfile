@@ -54,4 +54,5 @@ RUN rpm-ostree install /tmp/ublue-os-wallpapers-0.1-1.fc38.noarch.rpm && \
         chmod +x /tmp/scripts/build.sh && \
         /tmp/scripts/build.sh && \
         rm -rf /tmp/* /var/* && \
+        rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc \
         ostree container commit
