@@ -20,12 +20,14 @@ rpm:
     - libadwaita
     - qemu
     - VirtualBox
+    - kalendar
   remove:
     - firefox
     - firefox-langpacks
 
 firstboot:
   yafti: true
+
   flatpaks:
     - org.mozilla.firefox
     - org.kde.krita
@@ -50,4 +52,7 @@ firstboot:
     - org.telegram.desktop
     - org.kde.neochat
     - org.prismlauncher.PrismLauncher
+
+  scripts:
+      - nvidia-kargs.sh
 
