@@ -46,6 +46,13 @@ COPY --from=ghcr.io/ublue-os/bling:latest /files/usr/bin/ublue-nix* /usr/bin
 # Copied from the official container image since it's not available as an RPM.
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 
+
+# A layer for adding extra kernel modules to your image. Use for better hardware support and a few other features!
+COPY --from=ghcr.io/ublue-os/akmods:RELEASE /rpms/ /tmp/rpms
+RUN rpm-ostree install /tmp/rpms/ublue-os/*.rpm
+RUN rpm-ostree install /tmp/rpms/kmods/*.rpm
+
+
 # Copy the build script and all custom scripts.
 COPY scripts /tmp/scripts
 
