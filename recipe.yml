@@ -3,7 +3,7 @@
 # The image will be at "ghcr.io/yourusername/name".
 name: lunatic-ublue
 base-image: ghcr.io/ublue-os/kinoite-nvidia
-fedora-version: 39
+fedora-version: 38
 description: Custom image based on uBlue Kinoite Nvidia
 
 scripts:
