@@ -3,14 +3,14 @@
 # The image will be at "ghcr.io/yourusername/name".
 name: lunatic-ublue
 base-image: ghcr.io/ublue-os/kinoite-nvidia
-fedora-version: 38
+fedora-version: 39
 description: Custom image based on uBlue Kinoite Nvidia
 
 scripts:
   pre:
     - autorun.sh
   post:
-    - autorun.sh
+    - nvidia-kargs.sh
 
 rpm:
   repos:
@@ -52,7 +52,3 @@ firstboot:
     - org.telegram.desktop
     - org.kde.neochat
     - org.prismlauncher.PrismLauncher
-
-  scripts:
-      - nvidia-kargs.sh
-
